@@ -10,7 +10,7 @@ export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
     new Quote(1, 'watch me', 'jaden smith',new Date(2018,10,29)),
     new Quote(2,'indigo','willow smith',new Date(2019,8,12)),
-    new Quote(3,'get jiggy','snoop lion',new Date(2019,8,22)),
+    new Quote(3,'get jiggy','snoop lion',new Date(2019,8,23)),
 
   ];
 
