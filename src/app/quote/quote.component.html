@@ -1,14 +1,15 @@
-<div>
-  <h1>the quote garden</h1>
-  <hr>
-
+<div class="jumbotron">
+    <h1 class="text-center">the quote garden</h1>
+</div>
+<div class="container-fluid content">
   <div class="row">
       <div class="col-md-6">
+            <h2 class="text-center">Quote Wall</h2>
           <div *ngFor='let quote of quotes;let i = index'>
               <div>
                   <h4>{{quote.name}}</h4> 
                   <p>Published: {{quote.publishDate|dateAgo}}</p>
-                  <button (click)='toggleDetails(i)' class="btn btn-primary">See More</button>
+                  <button (click)='toggleDetails(i)' class="btn btn-outline-info">See More</button>
               </div>
                 
               <div *ngIf='quote.showDescription'>
@@ -21,4 +22,12 @@
       </div>
   </div>
   <p *ngIf='quotes.length > 5'>you have too many quotes</p>
+</div>
+<div class="container-fluid footer">
+  <footer id="sticky-footer" class="py-4 text-white-50">
+    <div class="container text-center">
+      <small>Copyright &copy; Gichuru Isaac</small>
+    </div>
+  </footer>
+
 </div>

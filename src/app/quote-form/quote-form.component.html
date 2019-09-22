@@ -13,12 +13,15 @@
     </div>
       <div class="form-group">
         <label for="Quote">Quote</label>
-        <textarea id="quote" rows="4" class="form-control" required></textarea>
+        <textarea id="quote" rows="4" class="form-control" required [(ngModel)]="newQuote.description" name="description" #description="ngModel"></textarea>
+        <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
+          Description is required.
+        </div>
       </div>
       <div class="form-group">
         <label for="publisher">Publisher</label>
-        <input type="text" required class="form-control" id="publisher">
+        <input type="text" required class="form-control" id="publisher" [(ngModel)]="newQuote.publisher" name="publisher" #publisher='ngModel'>
       </div>
-      <button type="submit" class="btn btn-success">Add Quote!</button>
+      <button type="submit" class="btn btn-outline-success">Add Quote!</button>
   </form>
 </div>

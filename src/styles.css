@@ -1,2 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
+@font-face {
+    font-family: 'Planet Kosmos';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Planet Kosmos'), url("../src/assets/fonts/PLANK___.woff") format('woff');
+    }
+
+    body {
+        font-family: 'Chivo', sans-serif;
+        background: url("../src/assets/images/neon-dessert1.jpg")no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .jumbotron {
+        background: transparent;
+    }
