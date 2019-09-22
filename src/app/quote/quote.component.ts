@@ -8,9 +8,9 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
-    new Quote(1, 'watch me', 'jaden smith',new Date(2018,10,29)),
-    new Quote(2,'indigo','willow smith',new Date(2019,8,12)),
-    new Quote(3,'get jiggy','snoop lion',new Date(2019,8,23)),
+    new Quote(1, 'watch me', 'jaden smith', 'me',new Date(2018,10,29)),
+    new Quote(2,'indigo','willow smith', 'Google User',new Date(2019,8,12)),
+    new Quote(3,'get jiggy','snoop lion', '6ix9ine',new Date(2019,8,23)),
 
   ];
 
