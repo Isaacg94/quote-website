@@ -9,7 +9,7 @@
 
     body {
         font-family: 'Chivo', sans-serif;
-        background: url("../src/assets/images/neon-dessert1.jpg")no-repeat center center fixed; 
+        background: url("../src/assets/images/neon-dessert2.jpg")no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -19,3 +19,22 @@
     .jumbotron {
         background: transparent;
     }
+    h1 {
+        font-family: 'Planet Kosmos';
+        font-size: 580%;
+    }
+ 
+   
+    .content {
+        background: rgba(255,252,234,0.8);
+        width: 90%;
+        padding: 5%;
+        padding-top: 3%;
+        border-radius: 2px;
+        box-shadow: 1px 1px 3px #8899;     
+    }
+    .btn {
+        border-radius: 50px;
+    }
+    
+    
