@@ -1,14 +1,21 @@
 <div>
   <h1>the quote garden</h1>
   <hr>
-  <ul>
-      <div *ngFor='let quote of quotes;let i = index'>
-          <li>{{quote.name}}</li>
-          <p>Published: {{quote.publishDate|dateAgo}}</p>
-          <button (click)='toggleDetails(i)'>Toggle Details</button>
-          <app-quote-detail *ngIf='quote.showDescription' [quote]='quote' (isBoring) = 'boringQuote($event,i)'></app-quote-detail>
+
+  <div class="row">
+      <div class="col-md-6">
+          <div *ngFor='let quote of quotes;let i = index'>
+              <div>
+                  <h4>{{quote.name}}</h4> 
+                  <p>Published: {{quote.publishDate|dateAgo}}</p>
+                  <button (click)='toggleDetails(i)' class="btn btn-primary">See More</button>
+              </div>
+                
+              <div *ngIf='quote.showDescription'>
+                  <app-quote-detail [quote]='quote' (isBoring) = 'boringQuote($event,i)'></app-quote-detail>
+              </div>
+          </div>
       </div>
-    
-  </ul>
+  </div>
   <p *ngIf='quotes.length > 5'>you have too many quotes</p>
 </div>
