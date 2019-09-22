@@ -1,13 +1,16 @@
 <div class="jumbotron">
-    <h1 class="text-center">the quote garden</h1>
+    <h2 class="text-center">The</h2>
+    <h1 class="text-center">quote</h1>
+    <h2 class="text-center">Garden.</h2>
 </div>
 <div class="container-fluid content">
   <div class="row">
       <div class="col-md-6">
             <h2 class="text-center">Quote Wall</h2>
+            <hr>
           <div *ngFor='let quote of quotes;let i = index'>
               <div>
-                  <h4>{{quote.name}}</h4> 
+                  <h4> <img src="../assets/images/quotes.png" alt=""> {{quote.name}}</h4> 
                   <p>Published: {{quote.publishDate|dateAgo}}</p>
                   <button (click)='toggleDetails(i)' class="btn btn-outline-info">See More</button>
               </div>
