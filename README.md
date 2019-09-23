@@ -1,27 +1,57 @@
 # Quotes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
+![alt text](src/assets/images/screenshot1.png)
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Author
+ **[Isaac Gichuru.](https://github.com/Isaacg94)**
 
-## Code scaffolding
+## Description
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+A website that allows a posting of quotes by users as well as interacting with the posted quotes.
 
-## Build
+**[Live-Link to site.](https://isaacg94.github.io/quote-website/)**
+## Features
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+* Interactive cards that show the posted quotes.
+* A drop down on the cards to reveal details.
+* A like and dislike button to upvote and downvote a qote.
+* A delete button to delete a quote.
+* A form to add a new quote.
 
-## Running unit tests
+## Behaviour Driven Development (BDD)
+|Behaviour 	           |    Input 	                 |       Output          |
+|----------------------------------------------|:-----------------------------------:|-----------------------------:|       
+|Page loads, reveals interactive cards that contain the quotes posted and a form to add their own.                        |   User fills the Author, Quote and Publisher sections of the form.                  |A new interactive card containing the new quote appears.     |                       |
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Setup/Installation Requirements
+Here is a run through of how to set up the application:
+* Step 1 : Clone this repository using the git clone link:
+  * **`git clone https://github.com/Isaacg94/quote-website.git`**
+* Step 2 : Navigate to the directory:
+  * **`cd Quotes`**
+* Step 3 : Open the directory created with your favorite IDE. If Atom type **`atom .`** if VSCode type **`code .`** . This will lauch the editor with the project setup,
+* Now feel free to hack around the project.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Known Bugs
 
-## Further help
+- The form displays the validation alerts when subitted. 
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Technologies Used
+
+- Angular CLI version  8.3.4
+- HTML
+- CSS
+- Javascript
+- Bootstrap 4.3.1
+
+## Support and contact details
+
+Primary E-mail Address: 7248zack@gmail.com
+
+### License
+*MIT License* [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](license/MIT)
+
+Copyright (c) 2019 **Isaac Gichuru**
+
