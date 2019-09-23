@@ -1,5 +1,5 @@
 <div class="text-center">
-    <button (click)="likeButtonClick()" class="btn btn-outline-success btn-sm  mr-3"><img src="assets/images/like.png" alt="like-icon" width="30%"> {{numberOfLikes}}</button>
-    <button (click)="dislikeButtonClick()" class="btn btn-outline-danger btn-sm mr-3"><img src="assets/images/dislike.png" alt="dislike-icon" width="30%"> {{numberOfDislikes}}</button>
+    <button (click)="likeButtonClick()" class="btn btn-outline-success btn-sm  mr-3"><img [src]="likeUrl" alt="like-icon" width="30%"> {{numberOfLikes}}</button>
+    <button (click)="dislikeButtonClick()" class="btn btn-outline-danger btn-sm mr-3"><img [src]="dislikeUrl" alt="dislike-icon" width="30%"> {{numberOfDislikes}}</button>
 </div>
 

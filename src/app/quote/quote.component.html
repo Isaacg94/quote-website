@@ -10,7 +10,7 @@
           <div class="row">
               <div *ngFor='let quote of quotes;let i = index'class="card quote" style="width: 20rem;">
                   <div>
-                      <h4> <img src="assets/images/quotes.png" alt=""> {{quote.description}}</h4> 
+                      <h4><img [src]="quotesUrl" alt="quotes"> {{quote.description}}</h4> 
                       <small>Posted By: {{quote.publisher}}</small>
                       <p>Published: {{quote.publishDate|dateAgo}}</p>
                       <hr>
