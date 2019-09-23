@@ -8,7 +8,6 @@ import { Quote } from '../quote';
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-  quotesUrl="../assets/images/quotes.png";
   quotes: Quote[] = [
     new Quote(1,'Abraham Lincoln', 'Nothing valuable can be lost by taking time.', 'Obizzy',new Date(2018,10,29)),
     new Quote(2,'6ix9ine',"Spiderman's real name is Peter Parker.", 'MemeLord',new Date(2019,8,12)),

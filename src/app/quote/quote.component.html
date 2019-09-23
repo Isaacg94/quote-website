@@ -10,7 +10,7 @@
           <div class="row">
               <div *ngFor='let quote of quotes;let i = index'class="card quote" style="width: 20rem;">
                   <div>
-                      <h4><img [src]="quotesUrl" alt="quotes"> {{quote.description}}</h4> 
+                      <h4><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAABmJLR0QA/wD/AP+gvaeTAAAEKUlEQVR4nO2cT2ibdRjHv88vr6vdZrGIzv+CVseGO6xJFocOMsGl71Ycc2To2qRWRQ868LCDKNqJl4EexJPInLVDZQgTlXa9CBEPzpW4w3C7rVImO2yirqVd0+T3eBjqslbz5vf8kgx8PrdAft/ny+f9l5c3CaAoiqIoiqL8HyGfYd2Z/q6Yoc1g2gBDqy3zvQSsAHAjAFhDiR9HPy76nFkvXeGetk66mALbNIPWAXgAwO243LOdgOLE0ZFE1LxAWij1+FOryqXrBkGUI/BaBi5vFma/W0dIvCf/CBGeAf7YyYwOX/uOs8B4pv82MubVygKeJUI7wF4K+Saxtf8xsBkC8HAj8usXuG+fiR+bfImI3wLQ4b+SHzb25u9YsHgPjCcaOacugevDwZuDH84cYkKmUYV80L0137tQwTCAmxo9y0R9Y2Jb7kGDygnGtS0v3pN/xTC+QhPkARH3wEQmv4EsxgF0NriPiHiYf5uAvc2cWXMPTIV9a2Ewxte4vGSYe6PZ8oAaAtdt291ZQWwMTTocXEn05J5k0JutmP1fAqmtEnwE4J5mlXEh1fv0/SD6oFXz/1VgMhzYDcL2ZpZxgGzFvg/ghlYVWPIikgr7Oirgd4TZJTAOs8F4zGKyHKMSmbbTwswqkj35PgYeFcZMMXCACSdAdA6ws/UsXlKgpeBFMN/q2oiAIkywa2L04BnXjFpks9nY5AyGBBEWwP6Vc1NDhUKh7BqySODGbLa9PMMvuwYS0XcrZmlLoXDwkmtGFCanl+8CcZfreia8UBwbOSDtsegcuDB9/XYGbnHMO0vzvKNQGG6oPAAg4ucEq9/1IQ9Y6iJClHMNI2Dv8W9GfhU1ikByy+BdDKRd1jLwy9zc7Ou+ulQJ7Ar3tAHY7Jh1cuLoyGF5pdrYoJJBHbehV0LA/p8Kn8/46lJVohO/PwSg3SWICB96aRQBw84b+dK8KX/itcuVL5hNt2tQzJov5XWiwcB6l3UEfHty9NPffHapPgwMr3bMOXdsfPhncZsIpNPpAMB9LmuZ8b3nOovOI3c65pySFonK/Mq7VwFY5rKWwd57Vgtk51uiC/Iq0SiVjPNtGxO8f0K4eg9c7hJCjGkPXSIOKzt1BICAcNFnFeAqgeT4qIqJrZ86EWYFMefHaWUy3p98OX2WUv5B/FwYAIjMmmQ48Lw0xwalI8WvP2vY+dRY7EiGA3FRCNsLE+OHjvz10otAZt4EYJM4xy4roqEXJH5NegwTURHA3wL1EBaiAoWoQCEqUIgKFKIChahAISpQiAoUogKFqEAhKlCIChSiAoWoQCEqUIgKFKIChahAISpQiAoUogKFqEAhKlCIChSiAoWoQCEqUIgKFKIChVR9vY3BXwBo2R/jkMH52u/h87Dcst8HMzDVqtmKoiiKoiiKoiiKoijKny/+CLTrPZxqAAAAAElFTkSuQmCC"> {{quote.description}}</h4> 
                       <small>Posted By: {{quote.publisher}}</small>
                       <p>Published: {{quote.publishDate|dateAgo}}</p>
                       <hr>
@@ -36,6 +36,7 @@
     <div class="container text-center">
       <small>Copyright &copy; Gichuru Isaac</small>
     </div>
+    <a href="https://icons8.com/icon/38968/quote-left">Quote Left icon by Icons8</a>
   </footer>
 
 </div>
