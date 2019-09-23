@@ -5,12 +5,13 @@
 </div>
 <div class="container-fluid content">
   <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-8">
             <h2 class="text-center">Quote Wall</h2>
             <hr>
           <div *ngFor='let quote of quotes;let i = index'>
               <div>
-                  <h4> <img src="../assets/images/quotes.png" alt=""> {{quote.name}}</h4> 
+                  <h4> <img src="../assets/images/quotes.png" alt=""> {{quote.description}}</h4> 
+                  <small>Posted By: {{quote.publisher}}</small>
                   <p>Published: {{quote.publishDate|dateAgo}}</p>
                   <button (click)='toggleDetails(i)' class="btn btn-outline-info">See More</button>
               </div>
@@ -20,8 +21,8 @@
               </div>
           </div>
       </div>
-      <div class="col-md-6">
-          <app-quote-form> (addQuote)="addNewQuote($event)"</app-quote-form>
+      <div class="col-md-4">
+          <app-quote-form (addQuote)="addNewQuote($event)"> </app-quote-form>
       </div>
   </div>
   <p *ngIf='quotes.length > 5'>you have too many quotes</p>

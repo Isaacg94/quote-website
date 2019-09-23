@@ -9,9 +9,9 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
-    new Quote(1, 'Nothing valuable can be lost by taking time.', 'Abraham Lincoln', 'Obizzy',new Date(2018,10,29)),
-    new Quote(2,"Spiderman's real name is Peter Parker.", '6ix9ine','MemeLord',new Date(2019,8,12)),
-    new Quote(3,'To the moon & back, remember?','my Ex', 'Google User',new Date(2019,8,23)),
+    new Quote(1,'Abraham Lincoln', 'Nothing valuable can be lost by taking time.', 'Obizzy',new Date(2018,10,29)),
+    new Quote(2,'6ix9ine',"Spiderman's real name is Peter Parker.", 'MemeLord',new Date(2019,8,12)),
+    new Quote(3,'my Ex','To the moon & back, remember?', 'Google User',new Date(2019,8,23)),
 
   ];
 
