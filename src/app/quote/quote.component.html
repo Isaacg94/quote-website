@@ -7,19 +7,23 @@
   <div class="row">
       <div class="col-md-8">
             <h2 class="text-center">Quote Wall</h2>
-            <hr>
-          <div *ngFor='let quote of quotes;let i = index'>
-              <div>
-                  <h4> <img src="../assets/images/quotes.png" alt=""> {{quote.description}}</h4> 
-                  <small>Posted By: {{quote.publisher}}</small>
-                  <p>Published: {{quote.publishDate|dateAgo}}</p>
-                  <button (click)='toggleDetails(i)' class="btn btn-outline-info">See More</button>
+          <div class="row">
+              <div *ngFor='let quote of quotes;let i = index'class="card quote" style="width: 20rem;">
+                  <div>
+                      <h4> <img src="../assets/images/quotes.png" alt=""> {{quote.description}}</h4> 
+                      <small>Posted By: {{quote.publisher}}</small>
+                      <p>Published: {{quote.publishDate|dateAgo}}</p>
+                      <hr>
+                      <button (click)='toggleDetails(i)' class="btn btn-outline-info">See More</button>
+                  </div>
+                    
+                  <div *ngIf='quote.showDescription'>
+                      <app-quote-detail [quote]='quote' (isBoring) = 'boringQuote($event,i)'></app-quote-detail>
+                  </div>
               </div>
-                
-              <div *ngIf='quote.showDescription'>
-                  <app-quote-detail [quote]='quote' (isBoring) = 'boringQuote($event,i)'></app-quote-detail>
-              </div>
+
           </div>
+          
       </div>
       <div class="col-md-4">
           <app-quote-form (addQuote)="addNewQuote($event)"> </app-quote-form>
